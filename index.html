@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aswab Invoice & Stock Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Times+New+Roman&family=Georgia&family=Courier+New&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* General */
+        --color-app-bg: #f3f4f6;
+        --color-card-bg: #ffffff;
+        --color-main-text: #1f2937;
+        --color-light-text: #6b7280;
+        
+        /* Header */
+        --color-header-bg: #ffffff;
+        --color-header-text: #1f2937;
+        
+        /* Buttons */
+        --color-primary-btn-bg: #16a34a;
+        --color-primary-btn-text: #ffffff;
+        --color-secondary-btn-bg: #e5e7eb;
+        --color-secondary-btn-text: #374151;
+        
+        /* Navigation */
+        --color-nav-active-bg: #16a34a;
+        --color-nav-active-text: #ffffff;
+
+        /* Legacy/Compatibility */
+        --color-background: var(--color-app-bg);
+        --color-text: var(--color-main-text);
+        --color-primary: var(--color-primary-btn-bg);
+        --color-accent: var(--color-primary-btn-bg);
+        --color-header: var(--color-header-bg);
+        --color-sidebar: var(--color-card-bg); /* Sidebar/main content cards use card-bg */
+
+        --font-family: 'Inter', sans-serif;
+      }
+      @font-face {
+        font-family: 'Jameel Noori Nastaleeq';
+        src: url('https://raw.githubusercontent.com/paktype/Jameel-Noori-Nastaleeq/master/Jameel%20Noori%20Nastaleeq.ttf') format('truetype');
+        font-display: swap;
+      }
+      .urdu-text {
+        font-family: 'Jameel Noori Nastaleeq', 'Inter', sans-serif;
+        direction: rtl;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: var(--color-app-bg);
+        color: var(--color-main-text);
+        font-family: var(--font-family);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.4.0/",
+    "@firebase/firestore": "https://aistudiocdn.com/@firebase/firestore@^4.9.2",
+    "@firebase/auth": "https://aistudiocdn.com/@firebase/auth@^1.11.0",
+    "react-toastify": "https://aistudiocdn.com/react-toastify@^11.0.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
