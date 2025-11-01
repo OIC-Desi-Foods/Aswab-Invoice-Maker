@@ -24,3 +24,5 @@ with:
 repoToken: "${{ secrets.GITHUB_TOKEN }}"
 firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
 channelId: live
+# PROJECT ID CORRECTED: Changed from "aswab-invoice-maker" to the confirmed ID: "aswab-invoice"
+project: "aswab-invoice"
